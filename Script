@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("TTD 3 | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Got it", "ButtonInfo", function()
+    print("Clicked")
+game:GetService("ReplicatedStorage").Shared.Packages.Knit.Services.MarketplaceService.RF.PromptPurchase:InvokeServer(15046412108)
+end)
